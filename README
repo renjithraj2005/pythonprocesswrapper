@@ -1,0 +1,28 @@
+Process Wrapper
+=================
+
+This is a Process Wrapper application which will launch the application with the specified parameter and restart the process if it fails
+
+
+Usage 
+=======
+
+from the wrapper folder
+
+python  wrapper.py <application_name> -p <port_no>  -c <configuration_file> -t <retry_time>
+
+Optional -l <host_name>  default localhost(127.0.0.1)
+
+no need to specify the log file. Automatically the error will be in the "error_log" and output will be in "out_log"
+
+Help python  wrapper.py -h
+
+here i am writing the error to command.log file (default) for specifing please use --log <fileName> in arguments
+
+
+Tasks to be done
+================
+
+Alert Mail Implementation (partially completed)
+Restarting the process if it fails 
+
